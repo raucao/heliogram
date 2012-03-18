@@ -13,11 +13,13 @@ if (navigator.getUserMedia) {
 
       $(canvas).width($(video).width());
       $(canvas).height($(video).height());
-      alert($(video).height());
+      $('#toggleVideo').on('click', function(){
+        $(video).toggle('show');
+      });
 
       draw(
         this, context,
-        700, 700
+        $(canvas).width(), $(canvas).height()
         // Math.floor(canvas.clientWidth / 5), Math.floor(canvas.clientHeight / 5)
       );
     }, false);
