@@ -37,6 +37,7 @@ if (navigator.getUserMedia) {
 
 function draw(video, context, w, h) {
   if (video.paused || video.ended) return false;
+  console.log(w+', '+h);
   context.drawImage(video, 0, 0, w, h);
   setTimeout(draw, 20, video, context, w, h);
 }
