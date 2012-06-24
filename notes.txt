@@ -1,2 +1,1 @@
 http://hacks.mozilla.org/2012/02/saving-images-and-files-in-localstorage/
-
