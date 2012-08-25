@@ -11,7 +11,7 @@ $(function(){
   }
   else if (navigator.webkitGetUserMedia) {
     prefix = "webkit";
-    navigator.webkitGetUserMedia('video', successCallback, errorCallback);
+    navigator.webkitGetUserMedia({video: true}, successCallback, errorCallback);
   }
   else {
     alert('Native web camera streaming is not supported in this browser.');
